@@ -42,9 +42,8 @@ const PostData = async () => {
         body: JSON.stringify(invoiceInput.value),
       });
       if (postData) {
-        Reset();
+        toggleNewInvoice.value = false;
         reloadNuxtApp();
-        showInvoice.value = false;
       }
     } catch (err) {
       console.log(`error post data : ${err}`);

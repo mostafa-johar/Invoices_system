@@ -39,7 +39,6 @@ const updateData = async () => {
       body: JSON.stringify(UpdateInputs.value),
     });
     if (update) {
-      ResetUpdate();
       toggleUpdateInvoice.value = false;
       reloadNuxtApp();
     }
