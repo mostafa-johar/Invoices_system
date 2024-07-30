@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-slate-950;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    @apply lg:w-[50%] mx-auto py-10 px-3 ;
+}
+
+.box{
+    @apply bg-slate-900 rounded-xl py-6 px-6 my-5 ;
+}
+
+.pending{
+    @apply bg-orange-800/50 text-white ;
+}
+.paid{
+    @apply bg-teal-300/50  text-white ;
+}
