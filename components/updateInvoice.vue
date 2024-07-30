@@ -39,9 +39,9 @@ const updateData = async () => {
       body: JSON.stringify(UpdateInputs.value),
     });
     if (update) {
-      Reset();
+      ResetUpdate();
+      toggleUpdateInvoice.value = false;
       reloadNuxtApp();
-      showInvoice.value = false;
     }
   } catch (err) {
     console.log(`error post data : ${err}`);
